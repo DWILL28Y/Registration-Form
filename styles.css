@@ -1,6 +1,7 @@
 body{
-
-    
+    background-image: url("otc.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -8,11 +9,11 @@ h1{
 }
 
 .form-container{
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255, 0.85);
     margin: auto;
     width: 80%;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 label{
