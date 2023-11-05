@@ -73,8 +73,8 @@
             </fieldset>
 
             <fieldset>
-                <legend>lasses You Want To Take</legend>
-                <form>
+                <legend>Classes You Want To Take</legend>
+                <form class="classes">
                     <input type="radio" id="c#" name="class" value="c#">
                     <label for="c#">C#</label>
                     
@@ -84,11 +84,22 @@
                     <input type="radio" id="java" name="class" value="java">
                     <label for="java">Java</label>
 
-                    
+                    <input type="radio" id="database" name="class" value="database">
+                    <label for="database">Database</label>
+
+                    <input type="radio" id="python" name="class" value="python">
+                    <label for="python">Python</label>
                 </form>
             </fieldset>
 
-            <input class="submit" type="submit" value="submit">
+            <fieldset>
+                <legend>Additional Info</legend>
+                <form>
+                    <textarea id="textarea" name="additionalInfo" rows="4" cols="50" placeholder="Type message here..."></textarea>
+
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </fieldset>
         </div>
        
     </body>

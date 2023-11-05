@@ -23,13 +23,14 @@ input[type="text"],[type="email"]{
 
 .submit{
     width: initial;
+    display: block;
 }
 
 .request-day{
     width: 15%;
 }
 
-.circle-radio{
+.circle-radio, .classes{
     display: inline-flex;
-    
 }
+
