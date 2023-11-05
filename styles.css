@@ -12,4 +12,24 @@ body{
 
 label{
     display: block;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+input[type="text"],[type="email"]{
+    position: absolute; left: 10%;
+    width: 75%;
+}
+
+.submit{
+    width: initial;
+}
+
+.request-day{
+    width: 15%;
+}
+
+.circle-radio{
+    display: inline-flex;
+    
 }
