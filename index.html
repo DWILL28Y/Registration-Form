@@ -5,102 +5,92 @@
     11/3/2023
 -->
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="form-container">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Advising Appointment</h1>
+
+    <div class="form-container">
+        <form method="get" action="thankyou.html">
             <fieldset class="contact">
                 <legend>Contact Info</legend>
-                <form>
-                    <label for="fname">
-                        First Name: 
-                        <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
-                    </label>
-                    <label for="lname">
-                        Last Name: 
-                        <input type="text" name="kname" id="lname" required placeholder="Last Name">
-                    </label>
-                    <label for="email">
-                        Email: 
-                        <input type="email" name="email" id="email" required placeholder="Email">
-                    </label>
-                    
-                </form>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Reservation Request</legend>
-                <form>
-                    <select>
-                        <option value="default" selected>Select a teacher</option>
-                        <option value="option1">Tiffany Ford</option>
-                        <option value="option2">Kirsten Markley</option>
-                        <option value="option3">Jackson Lewis</option>
-                    </select>
-
-                    <select>
-                        <option value="default" selected>Select a month</option>
-                        <option value="option1">January</option>
-                        <option value="option2">February</option>
-                        <option value="option3">March</option>
-                        <option value="option4">April</option>
-                        <option value="option5">May</option>
-                        <option value="option6">June</option>
-                        <option value="option7">July</option>
-                        <option value="option8">August</option>
-                        <option value="option9">September</option>
-                        <option value="option10">October</option>
-                        <option value="option11">November</option>
-                        <option value="option12">December</option>
-                    </select>
-
-                    <input class="request-day" type="number" id="numberInput" min="1" max="31" step="1">
-
-                    <div class="circle-radio">
-                        <input type="radio" id="am" name="time" value="am">
-                        <label for="am">AM</label>
-
-                        <input type="radio" id="pm" name="time" value="pm">
-                        <label for="pm">PM</label>
-                    </div>
-                </form>
+                <select name="teacher">
+                    <option value="default" selected>Select a teacher</option>
+                    <option value="Tiffany Ford">Tiffany Ford</option>
+                    <option value="Kirsten Markley">Kirsten Markley</option>
+                    <option value="Jackson Lewis">Jackson Lewis</option>
+                </select>
+                <select name="month">
+                    <option value="default" selected>Select a month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input class="request-day" type="number" id="numberInput" name="day" min="1" max="31" step="1">
+                <div class="circle-radio">
+                    <input type="radio" id="am" name="time" value="am">
+                    <label for="am">AM</label>
+                    <input type="radio" id="pm" name="time" value="pm">
+                    <label for="pm">PM</label>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Classes You Want To Take</legend>
-                <form class="classes">
-                    <input type="radio" id="c#" name="class" value="c#">
-                    <label for="c#">C#</label>
-                    
-                    <input type="radio" id="web dev" name="class" value="web dev">
-                    <label for="web dev">Web Dev</label>
-
-                    <input type="radio" id="java" name="class" value="java">
-                    <label for="java">Java</label>
-
-                    <input type="radio" id="database" name="class" value="database">
-                    <label for="database">Database</label>
-
-                    <input type="radio" id="python" name="class" value="python">
-                    <label for="python">Python</label>
-                </form>
+                <div class="classes">
+                <input type="radio" id="c#" name="class" value="C#">
+                <label for="c#">C#</label>
+                <input type="radio" id="web-dev" name="class" value="Web Dev">
+                <label for="web-dev">Web Dev</label>
+                <input type="radio" id="java" name="class" value="Java">
+                <label for="java">Java</label>
+                <input type="radio" id="database" name="class" value="Database">
+                <label for="database">Database</label>
+                <input type="radio" id="python" name="class" value="Python">
+                <label for="python">Python</label>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Additional Info</legend>
-                <form>
-                    <textarea id="textarea" name="additionalInfo" rows="4" cols="50" placeholder="Type message here..."></textarea>
-
-                    <input class="submit" type="submit" value="submit">
-                </form>
+                <textarea id="textarea" name="additionalInfo" rows="4" cols="50" placeholder="Type message here..."></textarea>
+                <input class="submit" type="submit" value="Submit">
             </fieldset>
-        </div>
-       
-    </body>
+        </form>
+    </div>
+</body>
+
 </html>
