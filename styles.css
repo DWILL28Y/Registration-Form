@@ -1,3 +1,15 @@
 body{
     
 }
+
+.form-container{
+    background-color: aliceblue;
+    margin: auto;
+    width: 80%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+}
